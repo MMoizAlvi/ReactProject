@@ -1,3 +1,9 @@
-form{
-  display: table-caption;
+.field{
+  width: 320px;
+  margin: 10px 0px;
+  border-radius: 4px;
+}
+
+.modalBox{
+  border-radius: 10px;
 }

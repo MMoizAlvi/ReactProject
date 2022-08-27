@@ -1,0 +1,82 @@
+.main{
+  background-color: #f2f2f2;
+}
+
+.banner{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.landingImg{
+  width: 470px;
+  height: 450px;
+  border-radius: 50px;
+  padding: 20px;
+}
+
+.productCardbox{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #e9e9e9;
+  border-radius: 20px;
+  width: 1400px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+  font-family: 'Aboreto', cursive;
+  font-family: 'Manrope', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  color: rgb(77, 23, 23);
+}
+
+.productHeading{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  color: rgb(77, 23, 23);
+  font-family: 'Aboreto', cursive;
+}
+
+.area{
+  margin-top: 20px;
+}
+
+.list{
+  margin-bottom: 30px;
+  font-weight: 900;
+}
+
+.view{
+  margin-top: 20px;
+  color: rgb(77, 23, 23);
+}
+
+
+.review{
+  margin-top: 20px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  width: 250px;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviewheading{
+  font-family: 'Aboreto', cursive;
+  padding-top: 5px;
+  border-bottom: 2px solid rgb(77, 23, 23);
+}
+
+.index{
+  color: green;
+  text-decoration: none;
+  font-family: 'Aboreto', cursive;
+  font-size: 30px;
+}
+
+.index:hover{
+  color: rgb(102, 163, 102);
+}

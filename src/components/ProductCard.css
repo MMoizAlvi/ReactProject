@@ -1,0 +1,92 @@
+.card{
+  color: rgb(121, 122, 122);
+  background-color: #f2f2f2;
+  font-family: 'Aboreto', cursive;
+  font-family: 'Manrope', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  height: 0vh;
+}
+
+.heading{
+  font-family: 'Aboreto', cursive;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 20px ;
+}
+
+.images{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+}
+
+.cardbox{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.img{
+  width: 130%;
+  height: auto;
+  border-radius: 30px;
+}
+
+.content{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.back{
+  width: 160px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: #372800;
+  font-family: 'Aboreto', cursive;
+  font-family: 'Comfortaa', cursive;
+  font-family: 'Manrope', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.back:hover{
+  color: #f2f2f2;
+}
+
+.links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.reviewBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 700px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.sec{
+  font-family: 'Aboreto', cursive;
+  font-family: 'Comfortaa', cursive;
+  font-family: 'Manrope', sans-serif;
+  border-radius: 0px;
+  padding: 0px 200px;
+}
+
+.section{
+  display: flex;
+  justify-content: center;
+}
+
+.comments{
+  color: #372800;
+  list-style: none;
+  margin-top: 7px;
+  border-bottom: 2px dotted green;
+}

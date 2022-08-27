@@ -1,0 +1,42 @@
+.logo{
+  width: 100px;
+}
+
+.name{
+  margin-left: 20px;
+  color: rgb(77, 23, 23);
+  font-weight: 500;
+  font-family: 'Aboreto', cursive;
+}
+
+.name:hover {
+  color: rgb(179, 133, 133);
+}
+
+.search{
+  width: 20px;
+}
+
+.searchBtn{
+  border-color: rgb(77, 23, 23);
+  border-radius: 5px;
+}
+
+.searchBtn:hover{
+  border-radius: 15px;
+  border-width: 2px;
+  background-color: rgb(247, 247, 243);
+  border-color: rgb(77, 23, 23);
+}
+
+.navbar{
+  background-color: #f2f2f2;
+  height: 75px;
+  position: sticky;
+  top: 0;
+}
+
+.box{
+  width: 400px;
+  margin-right: 40px ;
+}

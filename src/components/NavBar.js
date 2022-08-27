@@ -6,6 +6,8 @@ import Form from 'react-bootstrap/Form';
 import Navbar from 'react-bootstrap/Navbar';
 import Search from './Search';
 import Products from './Products';
+import image from './Images/search.png'
+import './Navbar.css'
 
 const NavBar = () => {
 
@@ -25,10 +27,10 @@ const NavBar = () => {
 
   return (
     <>
-      <Navbar bg="light" expand="lg">
+      <Navbar className='navbar'>
         <Container fluid>
-          <Navbar.Brand href="/">Ecommerce App</Navbar.Brand>
-            <Form className="d-flex">
+          <Navbar.Brand href="/" className='name'>Ecommerce App</Navbar.Brand>
+            <Form className="d-flex box">
                 <Form.Control
                   type="search"
                   placeholder="Search"
@@ -36,7 +38,8 @@ const NavBar = () => {
                   aria-label="Search"
                   onChange={handleChange}
                 />
-                <Button variant="outline-success" onClick={submitHandle}>Search</Button>
+                <Button variant="outline-success" onClick={submitHandle} className='searchBtn'>
+                  <img src={image} alt="search" className='search'/></Button>
               </Form>
           <Navbar.Toggle aria-controls="navbarScroll" />
         </Container>

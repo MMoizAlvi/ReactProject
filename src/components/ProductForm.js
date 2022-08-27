@@ -4,6 +4,7 @@ import axios from 'axios';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
+import './ProductForm.css'
 
 const style = {
   position: 'absolute',
@@ -12,8 +13,6 @@ const style = {
   transform: 'translate(-50%, -50%)',
   width: 400,
   bgcolor: 'background.paper',
-  border: '2px solid #000',
-  boxShadow: 24,
   p: 4,
 };
 
@@ -45,26 +44,42 @@ const ProductForm = (props) => {
 
   return (
     <div>
-      <Button onClick={handleOpen}>Edit</Button>
+      <Button onClick={handleOpen}><span className="btn btn-dark">Edit</span></Button>
       <Modal
         open={open}
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
+        <Box sx={style} className="modalBox">
           <div>
             <form>
-              <label>Name:
-                <input type="text" name="name" value={product.name} onChange={handleChange} />
-              </label>
-              <label>Price:
-                <input type="text" name="price" value={product.price} onChange={handleChange}/>
-              </label>
-              <label>Description:
-                <input type="text" name="description" value={product.description} onChange={handleChange}/>
-              </label>
-              <button onClick={handleSubmit}>Submit</button>
+              <h3>Update Product!</h3>
+              <input
+                type="text"
+                name="name"
+                value={product.name}
+                onChange={handleChange}
+                placeholder="Product Name"
+                className='field'
+                />
+              <input
+                type="text"
+                name="price"
+                value={product.price}
+                onChange={handleChange}
+                placeholder="Product Price"
+                className='field'
+                />
+              <input
+                type="text"
+                name="description"
+                value={product.description}
+                onChange={handleChange}
+                placeholder="Product Description"
+                className='field'
+                />
+              <button onClick={handleSubmit} className="btn btn-primary btn-sm">Submit</button>
             </form>
           </div>
         </Box>

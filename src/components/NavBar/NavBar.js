@@ -1,28 +1,28 @@
-import { useState } from 'react';
-import axios from 'axios';
+import { setSearch } from '../../store/slices/searchSlice';
+import { useDispatch, useSelector } from 'react-redux';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
+import { fetchSearchProducts } from '../../store/slices/searchProductSlice';
+import { handleOpen } from '../../store/slices/formSlice';
 import Form from 'react-bootstrap/Form';
 import Navbar from 'react-bootstrap/Navbar';
-import Search from './Search';
-import Products from './Products';
-import image from './Images/search.png'
-import './Navbar.css'
+import Search from '../Search/Search';
+import Products from '../Products/Products';
+import image from '../Images/search.png';
+import './Navbar.css';
 
 const NavBar = () => {
 
-  const [search, setSearch] = useState(null)
-  const [open, setIsOpen] = useState(false)
-  const [productsList, setProductList] = useState([])
+  const dispatch = useDispatch();
 
-  const handleChange = (e) => {
-    setSearch(e.target.value)
-  }
+  const {data: productsList} = useSelector((state) => state.searchProduct)
+  const open = useSelector((state) => state.form)
+  const search = useSelector((state) => state.search)
 
+  const handleChange = (e) => {dispatch(setSearch(e.target.value))};
   const submitHandle = () => {
-    axios.get(`http://localhost:3000/products?utf8=%E2%9C%93&name=${search}&commit=Search`)
-    .then(response => setProductList(response.data))
-    setIsOpen(true)
+    dispatch(fetchSearchProducts(search))
+    dispatch(handleOpen(true));
   }
 
   return (

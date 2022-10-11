@@ -7,3 +7,8 @@
 .modalBox{
   border-radius: 10px;
 }
+
+.validation{
+  color: red;
+  font-size: 12px;
+}
